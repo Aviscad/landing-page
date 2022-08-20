@@ -2,6 +2,7 @@
     font-family: "Trajan";
     src: url("/assets/fonts/Trajan\ Pro\ Regular.ttf") 
 }
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
 
 *,*::after,*::before{
     margin: 0;
@@ -14,7 +15,8 @@ html{
 html, body{
     box-sizing: inherit;
     font-size: 16px;
-    font-family: "Trajan";
+    font-family:  'Noto Sans', sans-serif;
+    line-height: 1.5;
     color: #000;
 }
 
@@ -25,6 +27,7 @@ header{
     justify-content: center;
     align-items: center;
     padding: 0 5em;
+    font-size: 1.1em;
     gap: .5em;
     background-color: #040303;
     color: #fff;
@@ -36,8 +39,12 @@ nav{
     width: 100vw;
     display: flex;
     justify-content: space-between;
+    font-weight:500;
     padding: 0 1.5em;
     align-items: center;
+}
+nav div {
+    font-weight: bold;
 }
 nav ul {
     display: flex;
@@ -53,12 +60,9 @@ img{
 ul{
     list-style: none;
 }
-ul li:hover{
-    background-color:#041C32;
-    cursor: pointer;
-}
 
 a{
+    padding: .5em 1em;
     text-decoration: none;
     display: inline-block;
     color: inherit;
@@ -129,18 +133,18 @@ a{
     font-size: .9em;
 }
 #home,#about,#characters{
-    scroll-margin-top: 3em;
+    scroll-margin-top: 4em;
 }
 #quote{
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    font-size: 1.5em;   
+    font-size: 1.75em;   
     width: 70%;
     margin: auto;
 }
-#quote-autor{
+#quote-autor{   
     margin-top: 1em;
     font-size: .9em;
     font-weight: bold;
