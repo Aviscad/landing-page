@@ -23,7 +23,7 @@ html, body{
 
 header{
     width: 100vw;
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     justify-content: center;
     background-image: linear-gradient(to bottom, #000000, #040404, #070707, #0b0b0b, #0e0e0e, #0e0e0e, #0e0e0e, #0e0e0e, #0b0b0b, #070707, #040404, #000000);
@@ -45,8 +45,15 @@ nav{
     padding: 0 1.5em;
     align-items: center;
 }
-nav div {
+nav div a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-weight: bold;
+}
+nav div img{
+    width:25px;
+    margin-right: 2px;
 }
 nav ul {
     display: flex;
@@ -188,10 +195,15 @@ footer{
         width: 100%;
     }
     #quote{
-        scroll-margin-top: 3em;
+        scroll-margin-top: 5em;
+        font-size: .9em;
     }
     #about,#characters{
-        scroll-margin-top: 13em ;
+        scroll-margin-top: 13em;
+    }
+    #home{
+        padding-top: 13em;
+        padding-bottom: 2em;
     }
 }
 
