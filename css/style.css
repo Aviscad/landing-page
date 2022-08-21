@@ -173,3 +173,55 @@ footer{
     font-weight: bold;
     font-style: italic;
 }
+
+@media only screen and (max-width:768px ) {
+    nav{
+        flex-direction: column;
+    }
+    nav ul{
+        flex-direction: column;
+    }
+    nav ul li{
+        padding: 0;   
+    }
+    .section-images{
+        width: 100%;
+    }
+    #quote{
+        scroll-margin-top: 3em;
+    }
+    #about,#characters{
+        scroll-margin-top: 13em ;
+    }
+}
+
+@media only screen and (max-width:975px ) {
+    header{
+        min-height: 100vh;
+        background-image: linear-gradient(to bottom, #000000, #040404, #070707, #0b0b0b, #0e0e0e, #0e0e0e, #0e0e0e, #0e0e0e, #0b0b0b, #070707, #040404, #000000);
+        padding: 0 5em;
+        padding-top: 3em;
+        font-size: 1.1em;
+        gap: .5em;
+        color: #fff;
+        flex-direction: column;
+    }
+    .header-image{
+        width: 60%;
+    }
+    .section-images{
+        flex-direction: column;
+        width: 50%;
+        margin: auto;
+    }
+    .section-images-card{
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width:976px ) {
+    header{padding-top: 4em;}
+    .header-image{
+        width: 50%;
+    }
+}
